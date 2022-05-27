@@ -1,18 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
-header {
-    width: 100rem;
-    height: 20%;
-    background-color: black;
-    
-
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
     header {
         border: 1px solid red;
         width: 100%;
@@ -28,8 +19,7 @@ header {
             background-color: #333;
             position: relative;
           
-          
-          /* Hide the links inside the navigation menu (except for logo/home) */
+       
            #myLinks {
             display: none;
     
@@ -62,18 +52,7 @@ header {
           
             }
           
-         
-       
-       
-        }
-    }
-    
-    
-    // This is where you can import other stylesheets or write your scss code
-    
-    
-}
-
-
+      }
+          
 // This is where you can import other stylesheets or write your scss code
 
