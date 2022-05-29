@@ -56,3 +56,137 @@
           
 // This is where you can import other stylesheets or write your scss code
 
+/* Start of Tour Page */ 
+
+$color_1: #fff;
+$color_2: #000;
+$color_3: white;
+$font-family_1: Arial, Helvetica, sans-serif;
+$font-family_2: 'Metal Mania', cursive;
+$background-color_1: #2e2b2b;
+$background-color_2: #7e1a36;
+$background-color_3: #2b2b2b;
+
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+main {
+	&::before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.6;
+		background-image: url('/145559.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		background-size: cover;
+		z-index: -1;
+	}
+}
+.table_container {
+	padding: 0 10%;
+	margin: 3.25rem auto 0;
+}
+.tour_title {
+	font-size: 6rem;
+	text-align: center;
+	margin-bottom: 40px;
+	font-family: $font-family_2;
+	color: $color_1;
+}
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	thead {
+		background-color: $background-color_2;
+		tr {
+			th {
+				font-size: 3rem;
+				font-weight: 600;
+				letter-spacing: 0.35px;
+				padding: 1rem;
+				vertical-align: top;
+				border: 1px solid #fff;
+				color: $color_2;
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				font-size: 2rem;
+				letter-spacing: 0.35px;
+				font-weight: normal;
+				color: $color_3;
+				background-color: $background-color_3;
+				padding: 1rem;
+				text-align: center;
+				border: 1px solid #000;
+			}
+		}
+	}
+}
+#book_now {
+	width: 500px;
+	max-width: 100%;
+	height: 233px;
+	margin: 3rem auto;
+	background-image: url("/tickets.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	display: block;
+}
+@media only screen and (max-width:786px) {
+	.table {
+		thead {
+			display: none;
+		}
+		display: block;
+		width: 100%;
+		tbody {
+			display: block;
+			width: 100%;
+			tr {
+				td {
+					text-align: right;
+					padding-right: 1rem 2rem 1rem 0;
+					padding-left: 50%;
+					position: relative;
+				}
+			}
+		}
+		tr {
+			display: block;
+			width: 100%;
+			margin-bottom: 3rem;
+			border: 1px solid #fff;
+		}
+		td {
+			display: block;
+			width: 100%;
+			&::before {
+				content: attr(data-label);
+				position: absolute;
+				left: 1rem;
+				width: 30%;
+				padding-left: 1rem;
+				font-weight: 600;
+				font-size: 2rem;
+				text-align: left;
+				color: $color_2;
+				background-color: $background-color_2;
+				border: 1px solid #fff;
+				display: inline-block;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+
+/* End of Tour Page */
