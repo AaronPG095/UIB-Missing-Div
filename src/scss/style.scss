@@ -2,7 +2,6 @@
 @import "desktop";
 @import "animation";
 @import "variables";
-@import "shop";
 
 :root {
   --gutter: 10px;
@@ -96,7 +95,7 @@
       background-size: contain;
       @include flex_center;
       background-repeat: no-repeat;
-
+      align-items: center;
       flex-direction: column;
 
       .player {
