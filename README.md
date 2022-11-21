@@ -4,6 +4,8 @@
 
 As our group project we decided to create a website for our new band, **Missing <> Div**. Through our Web-Dev course, we have all been inspired by the intricacies of html element (dis)placement, our band name being a tribute to our daily struggles with syntax.
 
+See the deployed website here - https://aaronpg095.github.io/UIB-Missing-Div/
+
 ---
 
 > ### Goals for the website:
